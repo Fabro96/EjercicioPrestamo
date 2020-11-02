@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioPrestamo.Entidades
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioPrestamo.Datos", "EjercicioPrestamo.Datos\EjercicioPrestamo.Datos.csproj", "{96459ACE-390B-4E77-930C-AC87A6A50F07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioPrestamos.Negocio", "EjercicioPrestamos.Negocio\EjercicioPrestamos.Negocio.csproj", "{7EBFFF7D-8CAA-4EE9-88CD-44C21B2F3398}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioPrestamo.Negocio", "EjercicioPrestamos.Negocio\EjercicioPrestamo.Negocio.csproj", "{7EBFFF7D-8CAA-4EE9-88CD-44C21B2F3398}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

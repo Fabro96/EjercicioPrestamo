@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace EjercicioPrestamo.Datos
 {
-    public class Class1
+    public class TipoPrestamoMapper
     {
+
     }
 }
