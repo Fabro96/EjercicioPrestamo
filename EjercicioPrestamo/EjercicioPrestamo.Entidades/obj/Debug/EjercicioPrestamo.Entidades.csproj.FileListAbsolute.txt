@@ -1,0 +1,6 @@
+C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioPrestamo\EjercicioPrestamo\EjercicioPrestamo.Entidades\bin\Debug\EjercicioPrestamo.Entidades.dll
+C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioPrestamo\EjercicioPrestamo\EjercicioPrestamo.Entidades\bin\Debug\EjercicioPrestamo.Entidades.pdb
+C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioPrestamo\EjercicioPrestamo\EjercicioPrestamo.Entidades\obj\Debug\EjercicioPrestamo.Entidades.csprojAssemblyReference.cache
+C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioPrestamo\EjercicioPrestamo\EjercicioPrestamo.Entidades\obj\Debug\EjercicioPrestamo.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioPrestamo\EjercicioPrestamo\EjercicioPrestamo.Entidades\obj\Debug\EjercicioPrestamo.Entidades.dll
+C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioPrestamo\EjercicioPrestamo\EjercicioPrestamo.Entidades\obj\Debug\EjercicioPrestamo.Entidades.pdb

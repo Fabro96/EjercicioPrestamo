@@ -33,5 +33,9 @@ namespace EjercicioPrestamo.Entidades
         }
 
         //MÉTODOS
+        public override string ToString()
+        {
+            return string.Format("TNA: {0}, Linea: {1}.", this.TNA, this.Linea);
+        }
     }
 }

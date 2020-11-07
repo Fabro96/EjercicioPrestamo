@@ -61,9 +61,22 @@ namespace EjercicioPrestamo.Entidades
             set { _id = value; }
             get { return _id;  }
         }
+        [DataMember]
+        public double CuotaCapital
+        {
+            get { return (Monto / Plazo); }
+        }
+        [DataMember]
+        public double CuotaInteres
+        {
+            get { return (CuotaCapital * (TNA / 12 / 100)); }
+        }
+        [DataMember]
+        public double CuotaTotal
+        {
+            get { return (CuotaCapital + CuotaInteres); }
+        }
 
-        //MÉTODOS
-        //ver propiedades calculables
 
 
     }

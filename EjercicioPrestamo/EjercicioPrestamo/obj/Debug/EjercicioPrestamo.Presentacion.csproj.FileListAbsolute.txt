@@ -7,3 +7,13 @@ C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\
 C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioPrestamo\EjercicioPrestamo\EjercicioPrestamo\obj\Debug\EjercicioPrestamo.Presentacion.csproj.CoreCompileInputs.cache
 C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioPrestamo\EjercicioPrestamo\EjercicioPrestamo\obj\Debug\EjercicioPrestamo.exe
 C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioPrestamo\EjercicioPrestamo\EjercicioPrestamo\obj\Debug\EjercicioPrestamo.pdb
+C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioPrestamo\EjercicioPrestamo\EjercicioPrestamo\bin\Debug\EjercicioPrestamo.Entidades.dll
+C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioPrestamo\EjercicioPrestamo\EjercicioPrestamo\bin\Debug\EjercicioPrestamos.Negocio.dll
+C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioPrestamo\EjercicioPrestamo\EjercicioPrestamo\bin\Debug\EjercicioPrestamo.Datos.dll
+C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioPrestamo\EjercicioPrestamo\EjercicioPrestamo\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioPrestamo\EjercicioPrestamo\EjercicioPrestamo\bin\Debug\EjercicioPrestamo.Entidades.pdb
+C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioPrestamo\EjercicioPrestamo\EjercicioPrestamo\bin\Debug\EjercicioPrestamos.Negocio.pdb
+C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioPrestamo\EjercicioPrestamo\EjercicioPrestamo\bin\Debug\EjercicioPrestamo.Datos.pdb
+C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioPrestamo\EjercicioPrestamo\EjercicioPrestamo\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioPrestamo\EjercicioPrestamo\EjercicioPrestamo\obj\Debug\EjercicioPrestamo.Form1.resources
+C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioPrestamo\EjercicioPrestamo\EjercicioPrestamo\obj\Debug\EjercicioPrestamo.Presentacion.csproj.CopyComplete
