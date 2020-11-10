@@ -15,9 +15,10 @@ namespace EjercicioPrestamo.Entidades
         private double _tna;
 
         //CONSTRUCTOR
-        public TipoPrestamo()
+        public TipoPrestamo(string linea, double tna)
         {
-
+            this._linea = linea;
+            this._tna = tna;
         }
         //PROPIEDADES
         [DataMember]

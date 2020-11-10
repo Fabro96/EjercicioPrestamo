@@ -19,9 +19,10 @@ namespace EjercicioPrestamo
 
         public Form1()
         {
+            InitializeComponent();
             this._tipoPrestamoServicio = new TipoPrestamoServicio();
             this._prestamo = new Prestamo();
-            InitializeComponent();
+            
         }
 
         //MÉTODOS
@@ -63,6 +64,22 @@ namespace EjercicioPrestamo
         private void label10_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void listTipoPrestamos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            TipoPrestamo tipoPrestamo = (TipoPrestamo)listTipoPrestamos.SelectedItem;
+
+            if (tipoPrestamo != null)
+            {
+                txtLinea.Text = tipoPrestamo.Linea.ToString();
+                txtTNA.Text = tipoPrestamo.TNA.ToString();
+            }
+            else
+            {
+                txtLinea.Text = "";
+                txtTNA.Text = "";
+            }
         }
     }
 }
