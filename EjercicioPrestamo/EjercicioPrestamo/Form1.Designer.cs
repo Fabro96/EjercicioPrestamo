@@ -156,6 +156,7 @@
             this.btnSimular.TabIndex = 12;
             this.btnSimular.Text = "SIMULAR";
             this.btnSimular.UseVisualStyleBackColor = true;
+            this.btnSimular.Click += new System.EventHandler(this.btnSimular_Click);
             // 
             // txtPlazo
             // 

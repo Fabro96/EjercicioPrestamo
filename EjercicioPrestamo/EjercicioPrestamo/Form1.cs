@@ -81,5 +81,25 @@ namespace EjercicioPrestamo
                 txtTNA.Text = "";
             }
         }
+
+        private void btnSimular_Click(object sender, EventArgs e)
+        {
+            Prestamo prestamo = new Prestamo(txtLinea.Text, double.Parse(txtTNA.Text), 
+                int.Parse(txtPlazo.Text), double.Parse(txtMonto.Text));
+
+            if(txtMonto != null && txtPlazo != null)
+            {
+                txtCuotaCapital.Text = prestamo.CuotaCapital.ToString();
+                txtCuotaInteres.Text = prestamo.CuotaInteres.ToString();
+                txtCuotaTotal.Text = prestamo.CuotaTotal.ToString();
+
+            }
+            else
+            {
+                //Ver para que aparezca el mensaje
+                MessageBox.Show("Debe ingresar Monto y Plazo primer.");
+            }
+             
+        }
     }
 }

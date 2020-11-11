@@ -32,6 +32,18 @@ namespace EjercicioPrestamo.Entidades
             this._monto = monto;
             this._usuario = usuario;
             
+            
+        }
+        public Prestamo(string linea, double tna, int plazo, double monto)
+        {
+            
+            this._linea = linea;
+            this._tna = tna;
+            this._plazo = plazo;
+            this._monto = monto;
+            
+
+
         }
 
         //PROPIEDADES
