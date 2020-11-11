@@ -101,5 +101,10 @@ namespace EjercicioPrestamo
             }
              
         }
+
+        private void btnAlta_Click(object sender, EventArgs e)
+        {
+            //Hacer Post de Prestamo
+        }
     }
 }

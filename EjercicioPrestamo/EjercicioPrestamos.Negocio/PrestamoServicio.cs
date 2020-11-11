@@ -16,6 +16,9 @@ namespace EjercicioPrestamos.Negocio
             this._prestamoServicio = new PrestamoServicio();
         }
 
-        
+        public int AgregarPrestamo()
+        {
+
+        }
     }
 }

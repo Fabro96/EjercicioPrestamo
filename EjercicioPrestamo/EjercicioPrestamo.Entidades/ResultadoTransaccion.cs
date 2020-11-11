@@ -7,17 +7,14 @@ using System.Threading.Tasks;
 
 namespace EjercicioPrestamo.Entidades
 {
+    [DataContract]
     public class ResultadoTransaccion
     {
-        [DataContract]
-        public class TransactionResult
-        {
-            [DataMember]
-            public bool IsOk { get; set; }
-            [DataMember]
-            public int Id { get; set; }
-            [DataMember]
-            public string Error { get; set; }
-        }
+        [DataMember]
+        public bool IsOk { get; set; }
+        [DataMember]
+        public int Id { get; set; }
+        [DataMember]
+        public string Error { get; set; }
     }
 }

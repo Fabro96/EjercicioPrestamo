@@ -91,6 +91,7 @@
             this.btnAlta.TabIndex = 19;
             this.btnAlta.Text = "ALTA";
             this.btnAlta.UseVisualStyleBackColor = true;
+            this.btnAlta.Click += new System.EventHandler(this.btnAlta_Click);
             // 
             // txtCuotaTotal
             // 
