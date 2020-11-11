@@ -28,7 +28,7 @@ namespace EjercicioPrestamo.Datos
 
             string result = WebHelper.Post("/api/v1/cliente", obj);
 
-            TransactionResult resultadoTransaccion = MapResultado(result);
+            ResultadoTransaccion resultadoTransaccion = MapResultado(result);
 
             return resultadoTransaccion;
         }
@@ -40,9 +40,9 @@ namespace EjercicioPrestamo.Datos
             return n;
         }
 
-        private TransactionResult MapResultado(string json)
+        private ResultadoTransaccion MapResultado(string json)
         {
-            TransactionResult lst = JsonConvert.DeserializeObject<TransactionResult>(json);
+            ResultadoTransaccion lst = JsonConvert.DeserializeObject<ResultadoTransaccion>(json);
             return lst;
         }
     }
