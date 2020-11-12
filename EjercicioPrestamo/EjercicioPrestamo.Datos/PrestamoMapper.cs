@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using System.Collections.Specialized;
 
 namespace EjercicioPrestamo.Datos
 {
@@ -35,7 +36,7 @@ namespace EjercicioPrestamo.Datos
         private NameValueCollection ReverseMap(Prestamo prestamo)
         {
             NameValueCollection n = new NameValueCollection();
-            n.Add("Nombre", cliente.Nombre);
+            n.Add("Nombre", prestamo.Linea);
             
             return n;
         }
