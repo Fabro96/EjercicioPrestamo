@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.Collections.Specialized;
+using System.Configuration;
 
 namespace EjercicioPrestamo.Datos
 {
@@ -13,7 +14,7 @@ namespace EjercicioPrestamo.Datos
     {
         public List<Prestamo> GetPrestamos()
         {
-            string json2 = WebHelper.Get("/api/v1/prestamo/{893746}"); // trae un texto en formato json de una web
+            string json2 = WebHelper.Get("/api/v1/prestamo/" + ConfigurationManager.AppSettings["Legajo"]); // trae un texto en formato json de una web
             List<Prestamo> resultado = MapList(json2);
             return resultado;
         }
@@ -23,11 +24,12 @@ namespace EjercicioPrestamo.Datos
             List<Prestamo> lst = JsonConvert.DeserializeObject<List<Prestamo>>(json);
             return lst;
         }
+
         public ResultadoTransaccion Insert(Prestamo prestamo)
         {
             NameValueCollection obj = ReverseMap(prestamo);
 
-            string result = WebHelper.Post("/api/v1/cliente", obj);
+            string result = WebHelper.Post("/api/v1/prestamo", obj);
 
             ResultadoTransaccion resultadoTransaccion = MapResultado(result);
 
@@ -36,8 +38,14 @@ namespace EjercicioPrestamo.Datos
         private NameValueCollection ReverseMap(Prestamo prestamo)
         {
             NameValueCollection n = new NameValueCollection();
-            n.Add("Nombre", prestamo.Linea);
-            
+            //n.Add("id", prestamo.ID.ToString());
+            n.Add("TNA", prestamo.TNA.ToString());
+            n.Add("Linea", prestamo.Linea.ToString());
+            n.Add("Plazo", prestamo.Plazo.ToString());
+            n.Add("Monto", prestamo.Monto.ToString());
+            n.Add("Cuota", prestamo.CuotaTotal.ToString());
+            n.Add("Usuario", ConfigurationManager.AppSettings["Legajo"]);
+
             return n;
         }
 

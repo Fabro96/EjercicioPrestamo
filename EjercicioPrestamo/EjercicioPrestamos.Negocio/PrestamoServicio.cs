@@ -1,4 +1,5 @@
-﻿using EjercicioPrestamo.Entidades;
+﻿using EjercicioPrestamo.Datos;
+using EjercicioPrestamo.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,16 +10,27 @@ namespace EjercicioPrestamos.Negocio
 {
     public class PrestamoServicio
     {
-        private PrestamoServicio _prestamoServicio;
+        private PrestamoMapper _prestamoMapper;
 
         public PrestamoServicio()
         {
-            this._prestamoServicio = new PrestamoServicio();
+            this._prestamoMapper = new PrestamoMapper();
         }
 
-        public int AgregarPrestamo()
+        public List<Prestamo> TraerPrestamos()
         {
+            List<Prestamo> result = _prestamoMapper.GetPrestamos();
+            return result;
+        }
 
+        public int AgregarPrestamo(Prestamo prestamo)
+        {
+            ResultadoTransaccion resultante = _prestamoMapper.Insert(prestamo);
+
+            if (resultante.IsOk)
+                return resultante.Id;
+            else
+                throw new Exception("Hubo un error en la petición al servidor. Detalle: " + resultante.Error);
         }
     }
 }

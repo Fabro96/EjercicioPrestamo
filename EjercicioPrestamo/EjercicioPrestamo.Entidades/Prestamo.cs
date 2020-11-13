@@ -31,8 +31,7 @@ namespace EjercicioPrestamo.Entidades
             this._plazo = plazo;
             this._monto = monto;
             this._usuario = usuario;
-            
-            
+
         }
         public Prestamo(string linea, double tna, int plazo, double monto)
         {
@@ -47,37 +46,37 @@ namespace EjercicioPrestamo.Entidades
         }
 
         //PROPIEDADES
-        [DataMember]
+        [DataMember(Name = "linea")]
         public string Linea
         {
             set { _linea = value; }
             get { return _linea;  }
         }
-        [DataMember]
+        [DataMember(Name = "tna")]
         public double TNA
         {
             set { _tna = value; }
             get { return _tna;  }
         }
-        [DataMember]
+        [DataMember(Name = "plazo")]
         public int Plazo
         {
             set { _plazo = value; }
             get { return _plazo;  }
         }
-        [DataMember]
+        [DataMember(Name = "monto")]
         public double Monto
         {
             set { _monto = value; }
             get { return _monto;  }
         }
-        [DataMember]
+        [DataMember(Name = "usuario")]
         public string Usuario
         {
             set { _usuario = value; }
             get { return _usuario;  }
         }
-        [DataMember]
+        [DataMember(Name = "id")]
         public int ID
         {
             set { _id = value; }
@@ -93,7 +92,7 @@ namespace EjercicioPrestamo.Entidades
         {
             get { return (CuotaCapital * (TNA / 12 / 100)); }
         }
-        [DataMember]
+        [DataMember(Name = "cuota")]
         public double CuotaTotal
         {
             get { return (CuotaCapital + CuotaInteres); }

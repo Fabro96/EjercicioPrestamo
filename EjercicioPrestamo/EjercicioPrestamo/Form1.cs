@@ -15,12 +15,14 @@ namespace EjercicioPrestamo
     public partial class Form1 : Form
     {
         private TipoPrestamoServicio _tipoPrestamoServicio;
+        private PrestamoServicio _prestamoServicio;
         private Prestamo _prestamo;
 
         public Form1()
         {
             InitializeComponent();
             this._tipoPrestamoServicio = new TipoPrestamoServicio();
+            this._prestamoServicio = new PrestamoServicio();
             this._prestamo = new Prestamo();
             
         }
@@ -34,11 +36,19 @@ namespace EjercicioPrestamo
 
         }
 
+        public void CargarPrestamos(List<Prestamo> prestamos)
+        {
+            listPrestamos.DataSource = null;
+            listPrestamos.DataSource = prestamos;
+
+        }
+
 
         //EVENTOS
         private void Form1_Load(object sender, EventArgs e)
         {
-            CargarTiposPrestamo(_tipoPrestamoServicio.TraerTiposPrestamo()) ;
+            CargarTiposPrestamo(_tipoPrestamoServicio.TraerTiposPrestamo());
+            CargarPrestamos(_prestamoServicio.TraerPrestamos());
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -72,14 +82,13 @@ namespace EjercicioPrestamo
 
             if (tipoPrestamo != null)
             {
+                txtLinea.Enabled =  false;
+                txtTNA.Enabled = false;
+
                 txtLinea.Text = tipoPrestamo.Linea.ToString();
                 txtTNA.Text = tipoPrestamo.TNA.ToString();
             }
-            else
-            {
-                txtLinea.Text = "";
-                txtTNA.Text = "";
-            }
+            
         }
 
         private void btnSimular_Click(object sender, EventArgs e)
@@ -89,10 +98,13 @@ namespace EjercicioPrestamo
 
             if(txtMonto != null && txtPlazo != null)
             {
+                txtCuotaCapital.Enabled = false;
+                txtCuotaInteres.Enabled = false;
+                txtCuotaTotal.Enabled = false;
+                
                 txtCuotaCapital.Text = prestamo.CuotaCapital.ToString();
                 txtCuotaInteres.Text = prestamo.CuotaInteres.ToString();
                 txtCuotaTotal.Text = prestamo.CuotaTotal.ToString();
-
             }
             else
             {
@@ -104,7 +116,24 @@ namespace EjercicioPrestamo
 
         private void btnAlta_Click(object sender, EventArgs e)
         {
-            //Hacer Post de Prestamo
+            try
+            {
+                Prestamo prestamo = new Prestamo(txtLinea.Text, double.Parse(txtTNA.Text),
+                int.Parse(txtMonto.Text), double.Parse(txtPlazo.Text));
+
+                _prestamoServicio.AgregarPrestamo(prestamo);
+
+                MessageBox.Show("Prestamo agregado!");
+
+                
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
+            
         }
     }
 }

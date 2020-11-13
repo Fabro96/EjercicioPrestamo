@@ -96,6 +96,7 @@
             // txtCuotaTotal
             // 
             this.txtCuotaTotal.BackColor = System.Drawing.SystemColors.Control;
+            this.txtCuotaTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCuotaTotal.Location = new System.Drawing.Point(461, 363);
             this.txtCuotaTotal.Name = "txtCuotaTotal";
             this.txtCuotaTotal.Size = new System.Drawing.Size(127, 22);
@@ -114,6 +115,7 @@
             // txtCuotaInteres
             // 
             this.txtCuotaInteres.BackColor = System.Drawing.SystemColors.Control;
+            this.txtCuotaInteres.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCuotaInteres.Location = new System.Drawing.Point(461, 322);
             this.txtCuotaInteres.Name = "txtCuotaInteres";
             this.txtCuotaInteres.Size = new System.Drawing.Size(127, 22);
@@ -133,6 +135,7 @@
             // txtCuotaCapital
             // 
             this.txtCuotaCapital.BackColor = System.Drawing.SystemColors.Control;
+            this.txtCuotaCapital.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCuotaCapital.Location = new System.Drawing.Point(461, 281);
             this.txtCuotaCapital.Name = "txtCuotaCapital";
             this.txtCuotaCapital.Size = new System.Drawing.Size(127, 22);
@@ -161,9 +164,9 @@
             // 
             // txtPlazo
             // 
-            this.txtPlazo.Location = new System.Drawing.Point(461, 186);
+            this.txtPlazo.Location = new System.Drawing.Point(420, 186);
             this.txtPlazo.Name = "txtPlazo";
-            this.txtPlazo.Size = new System.Drawing.Size(127, 22);
+            this.txtPlazo.Size = new System.Drawing.Size(168, 22);
             this.txtPlazo.TabIndex = 11;
             this.txtPlazo.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
@@ -179,9 +182,9 @@
             // 
             // txtMonto
             // 
-            this.txtMonto.Location = new System.Drawing.Point(461, 150);
+            this.txtMonto.Location = new System.Drawing.Point(420, 150);
             this.txtMonto.Name = "txtMonto";
-            this.txtMonto.Size = new System.Drawing.Size(127, 22);
+            this.txtMonto.Size = new System.Drawing.Size(168, 22);
             this.txtMonto.TabIndex = 9;
             // 
             // label4
@@ -197,9 +200,10 @@
             // txtTNA
             // 
             this.txtTNA.BackColor = System.Drawing.SystemColors.Control;
-            this.txtTNA.Location = new System.Drawing.Point(461, 110);
+            this.txtTNA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTNA.Location = new System.Drawing.Point(420, 110);
             this.txtTNA.Name = "txtTNA";
-            this.txtTNA.Size = new System.Drawing.Size(127, 22);
+            this.txtTNA.Size = new System.Drawing.Size(168, 22);
             this.txtTNA.TabIndex = 7;
             // 
             // label3
@@ -215,9 +219,10 @@
             // txtLinea
             // 
             this.txtLinea.BackColor = System.Drawing.SystemColors.Control;
-            this.txtLinea.Location = new System.Drawing.Point(461, 72);
+            this.txtLinea.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLinea.Location = new System.Drawing.Point(420, 72);
             this.txtLinea.Name = "txtLinea";
-            this.txtLinea.Size = new System.Drawing.Size(127, 22);
+            this.txtLinea.Size = new System.Drawing.Size(168, 22);
             this.txtLinea.TabIndex = 5;
             // 
             // label2
